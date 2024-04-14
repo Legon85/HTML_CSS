@@ -4,11 +4,17 @@
         <title>Таблицы в HTML</title>
     </head>
     <body>
-        <table border="1">
-            <tr><th>Первый столбец</th><th>Второй столбец</th><th>Третий столбец</th></tr>
-            <tr><td>1</td><td>2</td><td>3</td></tr>
-            <tr><td>4</td><td>5</td><td>6</td></tr>
-            <tr><td>7</td><td>8</td><td>9</td></tr>
+        <table border="1" align="center" bgcolor="cyan" cellpading="10" cellspacing="0" width="500" height="150"
+               bordercolor="red">
+            <caption>Заголовок таблицы</caption>
+            <thead bgcolor="yellow">
+            <tr><th>Первый столбец</th><th>Второй столбец</th><th>Третий столбец</th></tr></thead>
+            <tfoot>
+                <tr><td>Итого</td><td>1000</td><td>10101</td></tr>
+            </tfoot>
+            <tbody bgcolor="brown"><tr><td colspan="2">1</td><td align="center">3</td></tr>
+            <tr><td rowspan="2">4</td><td bgcolor="red">5</td><td valign="bottom">6</td></tr>
+            <tr><td>8</td><td>9</td></tr></tbody>
         </table>
     </body>
 </html>
